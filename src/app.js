@@ -33,6 +33,8 @@ let nouns = [
   'Star',
 ];
 
+let extensions = ['.com', '.net', '.us', '.io', '.world'];
+
 const randomElement = (array) => {
   return array[Math.floor(Math.random() * array.length)];
 };
@@ -43,7 +45,7 @@ window.onload = function() {
   //write your code here
   domain.innerHTML = `${randomElement(pronoun)}${randomElement(
     adjectives
-  )}${randomElement(nouns)}.com`;
+  )}${randomElement(nouns)}${randomElement(extensions)}`;
   console.log(domain.innerHTML);
   console.log('Hello Rigo from the console!');
 };
